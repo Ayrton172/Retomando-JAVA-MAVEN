@@ -1,0 +1,12 @@
+archivo pom.xml:
+  <plugins>
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>exec-maven-plugin</artifactId>
+      <version>3.5.0</version>
+      <configuration>
+        <mainClass>com.ejemplo.hola.App</mainClass>
+      </configuration>
+    </plugin>
+  </plugins>
+
