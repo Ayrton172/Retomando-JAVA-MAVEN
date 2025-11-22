@@ -1,3 +1,11 @@
+Crear proyecto Maven:
+mvn archetype:generate `
+"-DgroupId=com.ejemplo.hola" `
+"-DartifactId=hola-mundo" `
+"-DarchetypeGroupId=org.apache.maven.archetypes" `
+"-DarchetypeArtifactId=maven-archetype-quickstart" `
+"-DinteractiveMode=false"
+
 archivo pom.xml:
   <plugins>
     <plugin>
