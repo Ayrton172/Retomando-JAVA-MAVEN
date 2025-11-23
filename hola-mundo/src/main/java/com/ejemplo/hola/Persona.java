@@ -49,4 +49,30 @@ public class Persona {
     public void setGenero(char genero) {
         this.genero = genero;
     }
+    //Método propio
+    public void saludar() {
+        System.out.println("Hola " + this.nombre + ", tu edad es " + this.edad + " y tu altura es " + this.altura + " metros.");
+        if (this.estudiante) {
+            System.out.println("Eres estudiante");
+        } else {
+            System.out.println("No eres estudiante");
+        }
+        if (this.genero == 'M') {
+            System.out.println("Eres mujer");
+        } else {
+            System.out.println("Eres hombre");
+        }
+    }
+    //Método toString para representar el objeto como cadena
+    @Override
+    public String toString() {
+        return "Persona{" +
+                "nombre='" + nombre + '\'' +
+                ", edad=" + edad +
+                ", altura=" + altura +
+                ", estudiante=" + estudiante +
+                ", genero=" + genero +
+                '}';
+    }
+    
 }

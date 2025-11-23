@@ -35,5 +35,10 @@ public class App {
         int edadUsuario = scanner.nextInt();
         scanner.nextLine();
         System.out.print("Tu usuario es " + nombreUsuario + " y tienes " + edadUsuario + " años.");
+        // Cerrar el Scanner para evitar fuga de recursos
+        scanner.close();
+        // Crear y usar una Persona de ejemplo
+        Persona persona1 = new Persona("Noah", 5, 1.50, false, 'H');
+        persona1.saludar();
     }
 }
