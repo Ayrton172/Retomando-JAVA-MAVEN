@@ -40,5 +40,8 @@ public class App {
         // Crear y usar una Persona de ejemplo
         Persona persona1 = new Persona("Noah", 5, 1.50, false, 'H');
         persona1.saludar();
+        System.out.println("el método to string es: ");
+        System.out.println(persona1);
     }
+
 }
